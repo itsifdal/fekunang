@@ -1,0 +1,17 @@
+// font-size
+@for $i from 1 through 48 {
+    .font-#{$i} {
+        font-size: #{$i / 10}rem !important;
+    }
+}
+
+// font weight
+
+$fonts-weight: (100, 200, 300, 400, 500, 600, 700, 800, 900 , normal, bold);
+
+@each $fontw in $fonts-weight {
+    .font-w#{$fontw} {
+        font-weight: $fontw!important;
+        font-style: normal;
+    }
+}
